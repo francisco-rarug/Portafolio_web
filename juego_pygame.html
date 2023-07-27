@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Chano</title>
+    <link rel="icon" href="Imagenes/chano.png">
+    <link rel="stylesheet" href="juego_pygame.css">
+    <script src="juego_pygame.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Chano</h1>
+    
+        <nav >
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#galeria">Galeria</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">Sobre el juego</a></li>
+                <li class="nav__item"><a class="nav__link" href="index.html">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-about" id="about">
+        <div class="container">
+            <h2 class="section__title">Sobre el juego</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <img src="Imagenes/chano.png" alt="Icon 1">
+                    <h3>De que trata el juego?</h3>
+                    <p>"Chano" es un juego hecho con la libreria pygame de python. El juego trata sobre un robot que tiene un limite de tiempo para poder conseguir las 3 estrellas que se encuentran en los tres distintos niveles jugables.</p>
+                </div>
+                <div class="about-card">
+                    <img src="Imagenes/chano_3.png" alt="Icon 2">
+                    <h3>Por que se te ocurrio hacerlo?</h3>
+                    <p>Es un juego impulsado por la UTN (Universidad Tecnologia Nacional) donde aplico conocimientos de todo el cuatrimestre, como el uso de listas, diccionarios, programacion orientada a objetos y distintas skills aprendidas durante los 4 meses de cursada</p>
+                </div>
+            </div>
+            <a href="Archivos/rarugFrancisco-pygame-tp-final-main.zip" download class="boton-descarga">Descargar Zip del repositorio del juego</a>
+        </div>
+    </section>
+    
+
+    <section id="galeria">
+
+        <h2 class="section__title">Galeria</h2>
+        <div class="grid-container">
+            <img id="screenshot1" src="Imagenes/image-4.png" alt="Captura de pantalla 1" onclick="ampliarImagen('screenshot1')">
+            <img id="screenshot2" src="Imagenes/image-1.png" alt="Captura de pantalla 2" onclick="ampliarImagen('screenshot2')">
+            <img id="screenshot3" src="Imagenes/image-2.png" alt="Captura de pantalla 3" onclick="ampliarImagen('screenshot3')">
+            <img id="screenshot4" src="Imagenes/image-3.png" alt="Captura de pantalla 4" onclick="ampliarImagen('screenshot4')">
+        </div>
+        
+    </section>
+
+    <div class="video-container">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_4vw0lwayrg" title="Video de mi juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__item">
+                    <h3 class="footer__title">Redes sociales</h3>
+                    <ul class="footer__list">
+                        <li><a href="https://github.com/francisco-rarug" target="_blank"><i class="fab fa-github"></i>
+                                GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/francisco-rarug-386942268/" target="_blank"><i
+                                    class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://wa.me/1156936839" target="_blank"><i class="fab fa-whatsapp"></i>
+                                WhatsApp</a></li>
+                    </ul>
+                </div>
+
+                <img src="Imagenes/chano_2.png" alt="Logo de mi juego">
+
+                <div class="footer__item">
+                    <h3 class="footer__title">Sobre mí</h3>
+                    <p class="footer__description">¡Hola! Soy Francisco, un apasionado del desarrollo web y la
+                        tecnología en general. En este sitio comparto algunos de mis proyectos y habilidades. Si
+                        quieres contactarme, no dudes en hacerlo a través de alguna de mis redes sociales.</p>
+                    <hr class="footer__separator">
+                    <p class="footer__rights">&copy; 2023 Francisco Rarug. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

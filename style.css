@@ -1,0 +1,676 @@
+/* Estilos generales */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para el encabezado */
+
+.header {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.profile-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.profile-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-popup img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.profile-popup .close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile__image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.header__title {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.2s ease-in-out;
+
+}
+
+.header__title:hover {
+    color: #ff6b6b;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin-left: 30px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.2s ease-in-out;
+}
+
+.header__social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    background-color: #000;
+    color: #fff;
+}
+
+.social-icon i {
+    font-size: 18px;
+}
+
+.social-icon:nth-child(1) {
+    background-color: #333;
+    color: #fff;
+}
+
+.social-icon:nth-child(2) {
+    background-color: #0077b5;
+    color: #fff;
+}
+
+.social-icon:nth-child(3) {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.nav__link:hover {
+    color: #ff6b6b;
+}
+
+/* Estilos para la sección "Acerca de mí" */
+.section-about {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.section__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.section__description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.boton-descarga {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.boton-descarga:hover {
+    background-color: #0062cc;
+}
+
+/* Estilos para la sección "Proyectos" */
+.section-projects {
+    padding: 100px 0;
+    background-color: #f7f7f7;
+}
+
+.projects__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.project__item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 40px;
+}
+
+.project__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project__description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.project__link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0070c9;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.project__link:hover {
+    background-color: #004d8f;
+}
+
+/* Estilos para las habilidades */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.skill {
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.skill-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.skill-logo {
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+/*saassdsa*/
+.section-skills {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+}
+
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
+
+.skill__card {
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    z-index: 1;
+}
+
+.skill__card:hover {
+    transform: translateY(-5px);
+}
+
+.skill__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill__description {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.skill__description p {
+    margin: 0;
+}
+
+.skill__card.active .skill__description {
+    display: block;
+}
+
+.skill__button {
+    background-color: #0070c9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.skill__button:hover {
+    background-color: #3e25af;
+}
+
+.skill__button:focus {
+    outline: none;
+}
+
+.skill__description {
+    display: none;
+    margin-top: 10px;
+}
+
+.skill__description.show {
+    display: block;
+}
+
+/* Estilos para la sección "Contacto" */
+.section-contact {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.form__label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.form__input,
+.form__textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.form__textarea {
+    height: 200px;
+}
+
+.form__button {
+    background-color: #031504;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #3e8e41;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__item {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__item {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
+
+.footer__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__list li {
+    margin-bottom: 10px;
+}
+
+.footer__list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.footer__list li a:hover {
+    color: #c7c7c7;
+}
+
+.footer__description {
+    margin-bottom: 20px;
+}
+
+.footer__separator {
+    border: 1px solid #fff;
+    margin: 20px 0;
+}
+
+.footer__rights {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Estilo de la barra de scroll */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho de la barra de scroll */
+    background-color: #f5f5f5;
+    /* Color de fondo de la barra de scroll */
+}
+
+/* Estilo del indicador de la barra de scroll */
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    /* Color del indicador */
+    border-radius: 10px;
+    /* Borde redondeado del indicador */
+}
+
+/* Estilo del indicador de la barra de scroll cuando se está desplazando */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+    /* Color del indicador cuando se está desplazando */
+}
+
+/* Estilo del fondo de la página cuando se llega al final de la barra de scroll */
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    /* Color del fondo de la página cuando se llega al final de la barra de scroll */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para el encabezado */
+@media only screen and (max-width: 768px) {
+    .nav__list {
+        display: none;
+    }
+
+    .header__toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .header__menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 0px 10psx rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .header__menu.open {
+        display: block;
+    }
+
+    .header__menu li {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .header__menu li:first-child {
+        margin-top: 60px;
+    }
+
+    .header__menu li:last-child {
+        margin-bottom: 60px;
+    }
+
+    .header__menu a {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #333;
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .header__menu a:hover {
+        color: #ff6b6b;
+    }
+
+    .header__toggle.open .fa-bars {
+        display: none;
+    }
+
+    .header__toggle.open .fa-times {
+        display: block;
+    }
+}
+
+/* Estilos para la sección "Acerca de mí" */
+@media only screen and (max-width: 768px) {
+    .section-about {
+        padding: 50px 0;
+    }
+
+    .section__title {
+        font-size: 30px;
+    }
+
+    .section__description {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para la sección "Proyectos" */
+@media only screen and (max-width: 768px) {
+    .section-projects {
+        padding: 50px 0;
+    }
+
+    .projects__list {
+        flex-wrap: wrap;
+    }
+
+    .project__item {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .project__title {
+        font-size: 20px;
+    }
+
+    .project__description {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para las habilidades */
+@media only screen and (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 100%;
+    }
+}
