@@ -61,3 +61,21 @@ h2 {
     }
   }
   
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 10vmin;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    h2 {
+        font-size: 12vmin;
+    }
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 15vmin;
+    }
+}
