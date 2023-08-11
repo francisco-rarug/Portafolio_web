@@ -10,7 +10,7 @@
     <title>Chano</title>
     <link rel="icon" href="../Imagenes/chano.png">
     <link rel="stylesheet" href="juego_pygame.css">
-    <script src="juego_pygame.js"></script>
+   
 </head>
 <body>
     <header class="header">
@@ -52,15 +52,20 @@
 
         <h2 class="section__title animate__animated animate__backInLeft">Galeria</h2>
         <div class="grid-container">
-            <img id="screenshot1" src="../Imagenes/image-4.png" alt="Captura de pantalla 1" onclick="ampliarImagen('screenshot1')">
-            <img id="screenshot2" src="../Imagenes/image-1.png" alt="Captura de pantalla 2" onclick="ampliarImagen('screenshot2')">
-            <img id="screenshot3" src="../Imagenes/image-2.png" alt="Captura de pantalla 3" onclick="ampliarImagen('screenshot3')">
-            <img id="screenshot4" src="../Imagenes/image-3.png" alt="Captura de pantalla 4" onclick="ampliarImagen('screenshot4')">
+            <img id="screenshot1" src="../Imagenes/image-4.png" data-ampliado="no" alt="Captura de pantalla 1" onclick="ampliarImagen('screenshot1')">
+            <img id="screenshot2" src="../Imagenes/image-1.png" data-ampliado="no" alt="Captura de pantalla 2" onclick="ampliarImagen('screenshot2')">
+            <img id="screenshot3" src="../Imagenes/image-2.png" data-ampliado="no" alt="Captura de pantalla 3" onclick="ampliarImagen('screenshot3')">
+            <img id="screenshot4" src="../Imagenes/image-3.png" data-ampliado="no" alt="Captura de pantalla 4" onclick="ampliarImagen('screenshot4')">
         </div>
         
     </section>
 
-    <div class="video-container">
+    
+    <button id="showVideoBtn">Ver Video en youtube</button>
+    
+    
+
+    <div class="video-container" id="videoContainer">
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_4vw0lwayrg" title="Video de mi juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
@@ -92,6 +97,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="juego_pygame.js"></script>
 </body>
 </html>

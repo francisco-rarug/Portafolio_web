@@ -108,11 +108,28 @@ h2 {
 #galeria img:hover {
     transform: scale(1.05);
 }
+#showVideoBtn {
+    display: block;
+    margin: 20px auto; /* Esto centrará el botón horizontalmente y agregará un pequeño espacio arriba y abajo */
+    padding: 10px 20px;
+    background-color: #e1e1e1;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    color: #0a0a0a;
+}
 
-.video-container{
+
+#showVideoBtn:hover {
+    background-color: #b42323;
+}
+
+/* Estilos para el contenedor del video */
+.video-container {
+    display: none;
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 30px;
 }
 
 .section-about {

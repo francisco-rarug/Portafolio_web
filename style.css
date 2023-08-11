@@ -1,6 +1,4 @@
 /* Estilos generales */
-
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -101,7 +99,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: color 0.2s ease-in-out;
-
 }
 
 .header__title:hover {
