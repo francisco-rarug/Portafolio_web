@@ -182,8 +182,11 @@ body {
 
 .section__title {
     font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 30px;
+    width: 18%;
+}
+
+.section__title:hover{
+    color: #0070c9;
 }
 
 
@@ -438,12 +441,6 @@ body {
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 768px) {
-    .footer__item {
-        flex-basis: calc(33.33% - 20px);
-    }
-}
-
 .footer__title {
     font-size: 24px;
     font-weight: 700;
@@ -486,32 +483,23 @@ body {
     font-weight: 400;
 }
 
-/* Estilo de la barra de scroll */
 ::-webkit-scrollbar {
     width: 10px;
-    /* Ancho de la barra de scroll */
     background-color: #f5f5f5;
-    /* Color de fondo de la barra de scroll */
 }
 
-/* Estilo del indicador de la barra de scroll */
 ::-webkit-scrollbar-thumb {
     background-color: #ccc;
-    /* Color del indicador */
     border-radius: 10px;
-    /* Borde redondeado del indicador */
 }
 
-/* Estilo del indicador de la barra de scroll cuando se está desplazando */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #999;
-    /* Color del indicador cuando se está desplazando */
+
 }
 
-/* Estilo del fondo de la página cuando se llega al final de la barra de scroll */
 ::-webkit-scrollbar-track {
     background-color: #f5f5f5;
-    /* Color del fondo de la página cuando se llega al final de la barra de scroll */
 }
 
 .popup {
@@ -550,124 +538,145 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 100%;
-    }
-}
+/*... (tu código existente)...*/
 
-/* Estilos para el encabezado */
-@media only screen and (max-width: 768px) {
+/* Estilos responsivos para mejorar la legibilidad en dispositivos móviles */
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 18px; /* Aumenta el tamaño base de la fuente */
+    }
+
+    .section__title {
+        font-size: 32px; /* Título de sección */
+    }
+
+    .header__title {
+        font-size: 28px; /* Título del encabezado */
+    }
+
+    .nav__link {
+        font-size: 18px; /* Enlaces de navegación */
+    }
+
+    .section__description,
+    .project__description,
+    .skill-description {
+        font-size: 18px; /* Descripciones generales */
+    }
+
+    .project__title {
+        font-size: 28px; /* Título del proyecto */
+    }
+
+    .skill-title {
+        font-size: 22px; /* Título de habilidades */
+    }
+
+    .form__label {
+        font-size: 20px; /* Etiquetas del formulario */
+    }
+
+    .form__input, .form__textarea {
+        font-size: 18px; /* Inputs y textareas del formulario */
+    }
+
+    .footer__title {
+        font-size: 28px; /* Título del footer */
+    }
+
+    .footer__list li a {
+        font-size: 20px; /* Enlaces del footer */
+    }
+
+    .header__profile {
+        margin-bottom: 15px;
+    }
+
+    /* Ajustes de los íconos de redes sociales */
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+    }
+
+    .social-icon i {
+        font-size: 16px;
+    }
+
+    /* Ajustes para el Navbar */
     .nav__list {
-        display: none;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .header__toggle {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 24px;
-        color: #333;
-        cursor: pointer;
-    }
-
-    .header__menu {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0px 0px 10psx rgba(0, 0, 0, 0.1);
-        z-index: 1;
-    }
-
-    .header__menu.open {
-        display: block;
-    }
-
-    .header__menu li {
-        margin: 20px;
-        text-align: center;
-    }
-
-    .header__menu li:first-child {
-        margin-top: 60px;
-    }
-
-    .header__menu li:last-child {
-        margin-bottom: 60px;
-    }
-
-    .header__menu a {
-        font-size: 50px;
-        text-transform: uppercase;
-        color: #333;
-        text-decoration: none;
-        display: block;
-        padding: 10px 0;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .header__menu a:hover {
-        color: #ff6b6b;
-    }
-
-    .header__toggle.open .fa-bars {
-        display: none;
-    }
-
-    .header__toggle.open .fa-times {
-        display: block;
+    .nav__item {
+        margin: 10px 0;
     }
 }
 
-/* Estilos para la sección "Acerca de mí" */
-@media only screen and (max-width: 768px) {
-    .section-about {
-        padding: 50px 0;
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 17px;
     }
 
     .section__title {
         font-size: 30px;
     }
 
-    .section__description {
-        font-size: 50px;
-    }
-}
-
-/* Estilos para la sección "Proyectos" */
-@media only screen and (max-width: 768px) {
-    .section-projects {
-        padding: 50px 0;
+    .header__title {
+        font-size: 26px;
     }
 
-    .projects__list {
-        flex-wrap: wrap;
+    .nav__link {
+        font-size: 17px;
     }
 
-    .project__item {
-        flex-basis: calc(50% - 20px);
+    .section__description,
+    .project__description,
+    .skill-description {
+        font-size: 17px;
     }
 
     .project__title {
+        font-size: 26px;
+    }
+
+    .skill-title {
         font-size: 20px;
     }
 
-    .project__description {
+    .form__label {
+        font-size: 18px;
+    }
+
+    .form__input, .form__textarea {
+        font-size: 17px;
+    }
+
+    .footer__title {
+        font-size: 26px;
+    }
+
+    .footer__list li a {
+        font-size: 18px;
+    }
+
+     /* Espaciado para foto de perfil */
+     .header__profile {
+        margin-bottom: 15px;
+    }
+
+    /* Ajustes de los íconos de redes sociales */
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 4px;
+    }
+
+    .social-icon i {
         font-size: 14px;
     }
 }
 
-/* Estilos para las habilidades */
-@media only screen and (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-    }
 
-    .skill {
-        width: 100%;
-    }
-}

@@ -23,6 +23,7 @@ function ampliarImagen(id) {
 
 
 var showVideoBtn = document.getElementById('showVideoBtn');
+
 showVideoBtn.addEventListener('click', function() {
     var videoContainer = document.getElementById('videoContainer');
     

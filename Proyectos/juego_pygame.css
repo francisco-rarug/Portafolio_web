@@ -33,6 +33,16 @@ header {
     margin-left: 0px;
 }
 
+.header__title {
+    font-size: 24px;
+    color: #d5d2d2;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.2s ease-in-out;
+}
+
 .header__title:hover {
     color: #e66bff;
 }
@@ -73,6 +83,10 @@ header {
     transition: color 0.2s ease-in-out;
 }
 
+.video-container {
+    display: none;
+    text-align: center;
+}
 
 h2 {
     color: #0a0a0a;
@@ -110,7 +124,7 @@ h2 {
 }
 #showVideoBtn {
     display: block;
-    margin: 20px auto; /* Esto centrará el botón horizontalmente y agregará un pequeño espacio arriba y abajo */
+    margin: 20px auto; 
     padding: 10px 20px;
     background-color: #e1e1e1;
     font-size: 16px;
@@ -126,17 +140,12 @@ h2 {
     background-color: #b42323;
 }
 
-/* Estilos para el contenedor del video */
-.video-container {
-    display: none;
-    text-align: center;
-}
+
 
 .section-about {
     padding: 100px 0;
     background-image: url("../Imagenes/espacio.jpg");
     background-size: cover; 
-    background-repeat: no-repeat;
     background-attachment: fixed; 
 }
 
@@ -292,6 +301,18 @@ a{
 }
 
 @media screen and (max-width: 480px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+    
+    .footer {
+        width: 100%;
+        box-sizing: border-box;  /* Asegura que el padding y el borde se incluyan en el ancho total */
+    }
+    
     .nav__list {
         flex-direction: column;
         padding: 10px;
@@ -313,4 +334,21 @@ a{
     .container{
         width: 100%;
     }
+
+    .video-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 56.25%;
+    }
+    
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
 }
