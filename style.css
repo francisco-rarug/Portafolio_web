@@ -182,11 +182,14 @@ body {
 
 .section__title {
     font-size: 36px;
-    width: 18%;
+    width: 25%;
+    transition: transform 0.3s ease; 
 }
 
-.section__title:hover{
-    color: #0070c9;
+
+.section__title:hover {
+    transform: translateY(-10px);
+    color: #004d8f;
 }
 
 
@@ -308,9 +311,8 @@ body {
     margin-right: 1rem;
 }
 
-/*saassdsa*/
 .section-skills {
-    background-color: #f5f5f5;
+    background-color: #fff;
     padding: 80px 0;
 }
 
@@ -406,7 +408,7 @@ body {
 /* Estilos para la sección "Contacto" */
 .section-contact {
     padding: 100px 0;
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
 
 .form__label {
@@ -428,8 +430,11 @@ body {
 }
 
 .form__textarea {
-    height: 200px;
+    resize: vertical; /* Permite el redimensionado sólo verticalmente */
+    max-width: 100%;  /* Establece el ancho máximo al 100% del contenedor */
+    max-height: 300px;
 }
+
 
 .form__button {
     background-color: #031504;
@@ -449,6 +454,7 @@ body {
 .form__button:hover {
     background-color: #3e8e41;
 }
+
 
 /* Footer */
 .footer {
