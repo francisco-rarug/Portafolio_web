@@ -254,6 +254,21 @@ body {
     background-color: #004d8f;
 }
 
+.project__image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;  /* Animación suave de transformación */
+}
+
+.project__item:hover .project__image {
+    transform: scale(1.1); /* Aumenta la imagen en un 10% */
+}
+
+
+
 /* Estilos para las habilidades */
 .skills-container {
     display: flex;
@@ -374,6 +389,18 @@ body {
 
 .skill__description.show {
     display: block;
+}
+
+.skill__icon {
+    font-size: 2em; /* Ajusta el tamaño según lo que necesites */
+    margin-right: 10px;
+    color: #3e25af; /* Ajusta el color según lo que necesites */
+}
+
+.skill__icon .iconify {
+    font-size: 2em; /* Ajusta el tamaño */
+    margin-right: 10px; 
+    color: #3e25af; /* Ajusta el color si es necesario */
 }
 
 /* Estilos para la sección "Contacto" */
@@ -538,145 +565,106 @@ body {
     cursor: pointer;
 }
 
-/*... (tu código existente)...*/
+
 
 /* Estilos responsivos para mejorar la legibilidad en dispositivos móviles */
-
 @media screen and (max-width: 480px) {
     body {
-        font-size: 18px; /* Aumenta el tamaño base de la fuente */
+        font-size: 19px; 
     }
 
     .section__title {
-        font-size: 32px; /* Título de sección */
+        font-size: 34px; 
     }
 
     .header__title {
-        font-size: 28px; /* Título del encabezado */
+        font-size: 30px; 
     }
 
     .nav__link {
-        font-size: 18px; /* Enlaces de navegación */
+        font-size: 19px; 
     }
 
     .section__description,
     .project__description,
     .skill-description {
-        font-size: 18px; /* Descripciones generales */
+        font-size: 19px; 
     }
 
     .project__title {
-        font-size: 28px; /* Título del proyecto */
+        font-size: 30px; 
     }
 
     .skill-title {
-        font-size: 22px; /* Título de habilidades */
+        font-size: 24px; 
     }
 
     .form__label {
-        font-size: 20px; /* Etiquetas del formulario */
+        font-size: 22px; 
     }
 
     .form__input, .form__textarea {
-        font-size: 18px; /* Inputs y textareas del formulario */
+        font-size: 19px; 
     }
 
     .footer__title {
-        font-size: 28px; /* Título del footer */
+        font-size: 30px; 
     }
 
     .footer__list li a {
-        font-size: 20px; /* Enlaces del footer */
+        font-size: 22px; 
     }
 
-    .header__profile {
-        margin-bottom: 15px;
+    .project__image {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 10px;
     }
 
-    /* Ajustes de los íconos de redes sociales */
-    .social-icon {
-        width: 35px;
-        height: 35px;
-        margin-right: 5px;
+    .project__link {
+        display: block; 
+        width: 100%; 
+        text-align: center;
     }
+}
 
-    .social-icon i {
-        font-size: 16px;
+@media screen and (max-width: 768px) {
+    .project__item {
+        flex-basis: calc(50% - 20px); 
     }
+}
 
-    /* Ajustes para el Navbar */
-    .nav__list {
+@media screen and (max-width: 480px) {
+    .project__item {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
         flex-direction: column;
-        align-items: center;
+        padding: 10px;
     }
 
-    .nav__item {
-        margin: 10px 0;
+    .header__logo, .header__profile {
+        margin-bottom: 10px;
     }
+
+    .nav__list {
+        display: none;
+    }
+
 }
-
-@media screen and (max-width: 360px) {
-    body {
-        font-size: 17px;
-    }
-
-    .section__title {
-        font-size: 30px;
-    }
-
-    .header__title {
-        font-size: 26px;
-    }
-
-    .nav__link {
-        font-size: 17px;
-    }
-
-    .section__description,
-    .project__description,
-    .skill-description {
-        font-size: 17px;
-    }
-
-    .project__title {
-        font-size: 26px;
-    }
-
-    .skill-title {
-        font-size: 20px;
-    }
-
-    .form__label {
-        font-size: 18px;
-    }
-
-    .form__input, .form__textarea {
-        font-size: 17px;
-    }
-
-    .footer__title {
-        font-size: 26px;
-    }
-
-    .footer__list li a {
-        font-size: 18px;
-    }
-
-     /* Espaciado para foto de perfil */
-     .header__profile {
-        margin-bottom: 15px;
-    }
-
-    /* Ajustes de los íconos de redes sociales */
-    .social-icon {
-        width: 30px;
-        height: 30px;
-        margin-right: 4px;
-    }
-
-    .social-icon i {
-        font-size: 14px;
-    }
-}
-
 
