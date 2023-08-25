@@ -433,15 +433,15 @@ body {
 }
 
 .skill__icon {
-    font-size: 2em; /* Ajusta el tamaño según lo que necesites */
+    font-size: 2em;
     margin-right: 10px;
-    color: #3e25af; /* Ajusta el color según lo que necesites */
+    color: #3e25af; 
 }
 
 .skill__icon .iconify {
-    font-size: 2em; /* Ajusta el tamaño */
+    font-size: 2em;
     margin-right: 10px; 
-    color: #3e25af; /* Ajusta el color si es necesario */
+    color: #3e25af;
 }
 
 /* Estilos para la sección "Contacto" */
@@ -469,8 +469,8 @@ body {
 }
 
 .form__textarea {
-    resize: vertical; /* Permite el redimensionado sólo verticalmente */
-    max-width: 100%;  /* Establece el ancho máximo al 100% del contenedor */
+    resize: vertical;
+    max-width: 100%;
     max-height: 300px;
 }
 
@@ -493,7 +493,6 @@ body {
 .form__button:hover {
     background-color: #3e8e41;
 }
-
 
 /* Footer */
 .footer {
@@ -527,6 +526,7 @@ body {
 
 .footer__list li {
     margin-bottom: 10px;
+    display: flex;
 }
 
 .footer__list li a {
@@ -566,7 +566,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #999;
+    background-color: #007bff;
 
 }
 
@@ -610,6 +610,28 @@ body {
     cursor: pointer;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #414f58;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+}
+.back-to-top:hover{
+    background-color: #004d8f;
+}
+
+.back-to-top.hidden {
+    opacity: 0;
+    pointer-events: none; 
+}
 
 
 /* Estilos responsivos para mejorar la legibilidad en dispositivos móviles */
@@ -712,4 +734,3 @@ body {
     }
 
 }
-
