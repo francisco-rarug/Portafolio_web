@@ -666,6 +666,10 @@ body {
         font-size: 24px; 
     }
 
+    .skills__grid {
+        grid-template-columns: 1fr;
+    }
+
     .form__label {
         font-size: 22px; 
     }
@@ -733,4 +737,12 @@ body {
         display: none;
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
 }

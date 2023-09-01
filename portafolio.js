@@ -36,7 +36,6 @@ function toggleDescription(button) {
     }
 }
 
-
 var profile = document.querySelector('.profile__image');
 var profilePopup = document.getElementById('profile-popup');
 var closeBtn = document.querySelector('.profile-popup .close');
@@ -99,15 +98,18 @@ close.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const backToTopBtn = document.getElementById('backToTop');
-    
+
+    const isMobile = window.innerWidth <= 480;
+    const triggerPoint = isMobile ? window.innerHeight / 2 : 1800;
+
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 1800) {
+        if (window.scrollY > triggerPoint) {
             backToTopBtn.classList.remove('hidden');
         } else {
             backToTopBtn.classList.add('hidden');
         }
     });
-    
+
     backToTopBtn.addEventListener('click', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
