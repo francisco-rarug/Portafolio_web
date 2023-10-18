@@ -186,12 +186,10 @@ body {
     transition: transform 0.3s ease; 
 }
 
-
 .section__title:hover {
     transform: translateY(-10px);
     color: #004d8f;
 }
-
 
 .section__description {
     font-size: 18px;
@@ -309,7 +307,6 @@ body {
 .project:hover .project__overlay {
     bottom: 0;
 }
-
 
 /* Estilos para las habilidades */
 .skills-container {
